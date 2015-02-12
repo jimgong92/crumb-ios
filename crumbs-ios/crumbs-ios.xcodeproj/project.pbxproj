@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		489DB3211A8C2E6B006E5405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489DB3201A8C2E6B006E5405 /* AppDelegate.swift */; };
-		489DB3231A8C2E6B006E5405 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489DB3221A8C2E6B006E5405 /* FirstViewController.swift */; };
 		489DB3251A8C2E6B006E5405 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489DB3241A8C2E6B006E5405 /* MapViewController.swift */; };
 		489DB3281A8C2E6B006E5405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 489DB3261A8C2E6B006E5405 /* Main.storyboard */; };
 		489DB32A1A8C2E6B006E5405 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 489DB3291A8C2E6B006E5405 /* Images.xcassets */; };
@@ -31,7 +30,6 @@
 		489DB31B1A8C2E6B006E5405 /* crumbs-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "crumbs-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		489DB31F1A8C2E6B006E5405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		489DB3201A8C2E6B006E5405 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		489DB3221A8C2E6B006E5405 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		489DB3241A8C2E6B006E5405 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		489DB3271A8C2E6B006E5405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		489DB3291A8C2E6B006E5405 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -84,7 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				489DB3201A8C2E6B006E5405 /* AppDelegate.swift */,
-				489DB3221A8C2E6B006E5405 /* FirstViewController.swift */,
 				489DB3241A8C2E6B006E5405 /* MapViewController.swift */,
 				489DB3261A8C2E6B006E5405 /* Main.storyboard */,
 				489DB3291A8C2E6B006E5405 /* Images.xcassets */,
@@ -221,7 +218,6 @@
 			files = (
 				489DB3251A8C2E6B006E5405 /* MapViewController.swift in Sources */,
 				489DB3211A8C2E6B006E5405 /* AppDelegate.swift in Sources */,
-				489DB3231A8C2E6B006E5405 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

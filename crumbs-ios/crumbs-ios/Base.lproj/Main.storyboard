@@ -20,7 +20,11 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B1Y-eh-4Kc">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <items>
-                                    <barButtonItem title="Item" id="Ulq-C6-Fn8"/>
+                                    <barButtonItem title="Add Crumb" id="Ulq-C6-Fn8">
+                                        <connections>
+                                            <action selector="clickAddCrumb:" destination="CSn-FB-5yx" id="U1b-8R-JKd"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lRE-8j-0JR">
@@ -41,6 +45,10 @@
                             <constraint firstItem="B1Y-eh-4Kc" firstAttribute="top" secondItem="lRE-8j-0JR" secondAttribute="bottom" id="xOW-Rf-3uu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addCrumbBtn" destination="Ulq-C6-Fn8" id="GN4-aE-Bim"/>
+                        <outlet property="mainMap" destination="lRE-8j-0JR" id="SCO-tu-NTg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IEX-ZR-opd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

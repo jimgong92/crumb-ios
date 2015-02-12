@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import MapKit
+
 
 class MapViewController: UIViewController {
-
+    @IBOutlet weak var mainMap: MKMapView!
+    
+    @IBOutlet weak var addCrumbBtn: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +25,8 @@ class MapViewController: UIViewController {
     }
 
 
+    @IBAction func clickAddCrumb(sender: AnyObject) {
+        println("clicke")
+    }
 }
 
