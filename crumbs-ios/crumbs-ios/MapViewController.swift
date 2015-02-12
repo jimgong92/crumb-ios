@@ -19,7 +19,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
        
         super.viewDidLoad()
-         println("magic?")
+//         println("magic?")
         // Do any additional setup after loading the view, typically from a nib.
         locationManager.requestWhenInUseAuthorization();
 //        CLLocationManager.requestAlwaysAuthorizat
@@ -40,13 +40,14 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        //call this function if position updated
         var locValue:CLLocationCoordinate2D = manager.location.coordinate
         println("locations = \(locValue.latitude) \(locValue.longitude)")
         //        let sfGiantsStadiumLocation = CLLocationCoordinate2D(latitude: 37.783748, longitude: -122.409046)
         //set a span to be used by the MKCoordinateRegion structure
-        let sfGiantsStadiumLocation = CLLocationCoordinate2D(latitude: locValue.latitude, longitude: locValue.longitude)
+        let currentLocation = CLLocationCoordinate2D(latitude: locValue.latitude, longitude: locValue.longitude)
         var span = MKCoordinateSpanMake(0.01, 0.01)
-        var coordinateRegion = MKCoordinateRegion(center: sfGiantsStadiumLocation, span: span)
+        var coordinateRegion = MKCoordinateRegion(center: currentLocation, span: span)
         
         mainMap.setRegion(coordinateRegion, animated: true)
     }
