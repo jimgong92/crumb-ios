@@ -14,6 +14,7 @@
 		489DB32D1A8C2E6B006E5405 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 489DB32B1A8C2E6B006E5405 /* LaunchScreen.xib */; };
 		489DB3391A8C2E6B006E5405 /* crumbs_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489DB3381A8C2E6B006E5405 /* crumbs_iosTests.swift */; };
 		489DB3431A8C3255006E5405 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 489DB3421A8C3255006E5405 /* MapKit.framework */; };
+		489DB3451A8C3578006E5405 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 489DB3441A8C3578006E5405 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		489DB3371A8C2E6B006E5405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		489DB3381A8C2E6B006E5405 /* crumbs_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crumbs_iosTests.swift; sourceTree = "<group>"; };
 		489DB3421A8C3255006E5405 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		489DB3441A8C3578006E5405 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				489DB3451A8C3578006E5405 /* CoreLocation.framework in Frameworks */,
 				489DB3431A8C3255006E5405 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +65,7 @@
 		489DB3121A8C2E6B006E5405 = {
 			isa = PBXGroup;
 			children = (
+				489DB3441A8C3578006E5405 /* CoreLocation.framework */,
 				489DB3421A8C3255006E5405 /* MapKit.framework */,
 				489DB31D1A8C2E6B006E5405 /* crumbs-ios */,
 				489DB3351A8C2E6B006E5405 /* crumbs-iosTests */,

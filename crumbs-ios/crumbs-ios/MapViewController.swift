@@ -8,20 +8,47 @@
 
 import UIKit
 import MapKit
+import CoreLocation;
 
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var mainMap: MKMapView!
-    
     @IBOutlet weak var addCrumbBtn: UIBarButtonItem!
+    let locationManager = CLLocationManager()
+    
     override func viewDidLoad() {
+       
         super.viewDidLoad()
+         println("magic?")
         // Do any additional setup after loading the view, typically from a nib.
+        locationManager.requestWhenInUseAuthorization();
+//        CLLocationManager.requestAlwaysAuthorizat
+        if CLLocationManager.locationServicesEnabled(){
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+            
+        }
+        else{
+            println("Location service disabled");
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        var locValue:CLLocationCoordinate2D = manager.location.coordinate
+        println("locations = \(locValue.latitude) \(locValue.longitude)")
+        //        let sfGiantsStadiumLocation = CLLocationCoordinate2D(latitude: 37.783748, longitude: -122.409046)
+        //set a span to be used by the MKCoordinateRegion structure
+        let sfGiantsStadiumLocation = CLLocationCoordinate2D(latitude: locValue.latitude, longitude: locValue.longitude)
+        var span = MKCoordinateSpanMake(0.01, 0.01)
+        var coordinateRegion = MKCoordinateRegion(center: sfGiantsStadiumLocation, span: span)
+        
+        mainMap.setRegion(coordinateRegion, animated: true)
     }
 
 
